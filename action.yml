@@ -145,7 +145,7 @@ runs:
 
     - name: Deploy to GitHub Page Branch 🚀
       if: ${{ inputs.deploy-mode == 'branch' && inputs.without-deploy == 'false' }}
-      uses: JamesIves/github-pages-deploy-action@v4.7.3
+      uses: JamesIves/github-pages-deploy-action@v4.8.0
       with:
         token: ${{ inputs.GITHUB_TOKEN }}
         branch: ${{ inputs.javadoc-branch }}
